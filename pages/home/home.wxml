@@ -1,0 +1,13 @@
+<view>姓名: {{name}}</view>
+<view>年龄: {{age+11}}</view>
+
+
+
+<!-- 演示如何引用js文件中的数组-遍历输出 -->
+<view wx:for="{{animals}}">{{item.name}}-{{item.age}}
+-{{item.color}}</view>
+
+<!-- 下面演示事件的绑定 -->
+<view>统计:{{count}}</view>
+<button size="mini" bindtap="addclk">+</button>
+<button size="mini" bindtap="subclk">-</button>
