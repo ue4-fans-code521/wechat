@@ -1,2 +1,21 @@
 <text class="title">傻逼青年欢乐多</text>
 <button size="mini">把我</button>
+
+<!-- 为了获取用户的授权信息,除了在app.js中使用getUserInfo()这个api
+  之外(不就就会废弃),我们还可以通过在button组件中设置属性来实现
+  1.open-type="getUserInfo"属性
+  2.bindgetuserinfo="xxxx"
+  3.传递过来的event事件对象中就包含有用户的授权信息.
+  以上
+ -->
+
+<!-- <button size="mini" open-type="getUserInfo" bindgetuserinfo="handleGetInfo">
+  获取授权信息
+</button> -->
+
+<!-- 我们还可以直接的使用内置组件 open-type来展示用户的信息, 但是没有交互 -->
+<!-- <open-data type="userNickName"></open-data> -->
+<!-- <open-data type="userAvatarUrl"></open-data> -->
+
+<view wx:for="{{messages}}">{{item}}</view>
+<view bindtap="simpleClk">普通文本点击事件</view>
