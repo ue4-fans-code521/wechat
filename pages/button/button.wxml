@@ -1,0 +1,18 @@
+<!--pages/button/button.wxml-->
+<button>按键</button>
+<button size="mini">iwen</button>
+<button size="mini">peter</button>
+
+<button size="mini" type="primary">primary</button>
+<button size="mini" type="default">default</button>
+<button size="mini" type="warn">warn</button>
+
+<button size="mini" plain>镂空透明背景</button>
+
+<button size="mini" disabled>禁用</button>
+
+<button size="mini" loading>加载中</button>
+
+<!-- hover-calss属性,设置按钮按下时的样式类 -->
+<button hover-class="pressed-type">hover-class</button>
+

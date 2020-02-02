@@ -1,0 +1,22 @@
+<!-- 正常最基本的图片加载演示 -->
+<image mode="aspectFit" src='/assets/img/god.jfif' />
+<image mode="widthFix" src='/assets/img/god2.jfif' />
+<image src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' />
+
+<!-- 下面我们演示如何选择相册中的图片 -->
+<button bindtap="imgClk">选择图片</button>
+<image mode="widthFix" src="{{imagePath}}" />
+
+<!-- lazy-load属性配合bindload属性验证延迟加载图片 -->
+<image wx:for="{{1}}" bindload="handleLoadOver" 
+lazy-load
+src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' />
+
+<!-- 长按图片显示保存.分享. 识别小程序码 -->
+<image 
+  show-menu-by-longpress	
+  src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"/>
+
+  <!-- mode图片的显示模式-实际项目中最为常见的模式mode="widthFix" -->
+
+  <image mode="widthFix" src='/assets/img/god.jfif' />

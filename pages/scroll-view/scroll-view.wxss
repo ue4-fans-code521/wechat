@@ -1,0 +1,28 @@
+/* 1.如何实现局部的水平滚动的样式设定 */
+
+.v1 {
+  margin: 2px 2px;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  display: inline-block;
+}
+
+.sv1 {
+  background-color: purple;
+  white-space: nowrap;
+}
+
+/* 如何实现局部的垂直滚动 */
+
+.v2 {
+  margin: 4px 4px;
+  height: 100px;
+  background-color: yellow;
+}
+
+.sv2{
+  margin-top: 20px;
+  background-color: red;
+  height: 200px;
+}

@@ -1,0 +1,23 @@
+/* pages/view/view.wxss */
+.vw1{
+  width: 100px;
+  height: 100px;
+  background-color: green
+}
+
+.hv{
+  background-color: yellow;
+  color: red;
+  font-size: 30px
+}
+
+.father{
+  width: 200px;
+  height: 200px;
+  background-color: purple;
+  margin-top: 20px
+}
+
+.f_hv{
+  background-color: red
+}

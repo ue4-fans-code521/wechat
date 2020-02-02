@@ -1,0 +1,17 @@
+<input value="hehe"/>
+
+<!-- 暗文显示 -->
+<input password />
+
+<!-- 占位符placeholder -->
+<input placeholder="mini"></input>
+
+<!-- confirm-type -->
+<input confirm-type="send"></input>
+
+<!-- 相关的事件的绑定 -->
+<input 
+bindinput="handleInput"
+bindfocus="handleFocus"
+bindblur="handleBlur"
+/>

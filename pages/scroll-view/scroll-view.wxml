@@ -1,0 +1,30 @@
+<!-- 如何实现局部局部水平滚动 -->
+<!--  要实现局部的水平滚动,需要条件
+  1.wxml中的srcoll-view中的属性scroll-x
+  2.设置view组件样式文件 display: inline-block;
+  3.设置scroll-view组件的样式文件white-space: nowrap;
+ -->
+
+<scroll-view class="sv1" scroll-x>
+  <view wx:for="{{10}}" class="v1">{{item}}</view>
+</scroll-view>
+
+
+
+
+<!-- 如何实现局部的垂直滚动 -->
+
+<!--  要实现局部的水平滚动,需要条件
+  1.wxml中的srcoll-view中的属性scroll-y
+  2.设置scroll-view组件的样式文件height: 200px;(必须设置固定的高度，
+  才会有局部滚动的效果)
+ -->
+
+<scroll-view class="sv2" scroll-y>
+  <view wx:for="{{10}}" class="v2">{{item}}</view>
+</scroll-view>
+
+<!-- 监听局部滚动的事件 -->
+<scroll-view class="sv2" scroll-y bindscroll="handleScroll">
+  <view wx:for="{{10}}" class="v2">{{item}}</view>
+</scroll-view>

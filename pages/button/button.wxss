@@ -1,0 +1,7 @@
+/* pages/button/button.wxss */
+
+.pressed-type {
+  background-color: green;
+  color:red
+  
+}

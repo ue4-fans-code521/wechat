@@ -1,0 +1,18 @@
+<!--pages/text/text.wxml-->
+<text>你好,\n</text>
+<text>小程序\n</text>
+
+<!-- 1.space属性-设置空格占用大小 -->
+<text>hello iwen\n</text>
+<text space="nbsp">hello iwen\n</text>
+<text space="ensp">hello iwen\n</text>
+<text space="emsp">hello iwen\n</text>
+
+
+<!-- 2.decode属性 -->
+<text decode="{{true}}">5 &gt; 3\n</text>
+<text decode>5 &gt; 3\n</text>
+
+<!-- 3.selectable属性 -->
+<text selectable="{{true}}">可否选中\n</text>
+<text selectable>可否选中\n</text>

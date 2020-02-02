@@ -1,0 +1,5 @@
+<view  >公共属性1</view>
+
+<view wx:if="{{xx}}" >公共属性2</view>
+
+<view bindtap="" catchtap="" >公共属性3</view>

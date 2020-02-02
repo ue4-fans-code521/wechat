@@ -1,0 +1,15 @@
+<view class="vw1" hover-class="hv" hover-stay-time="{{500}}" hover-start-time="{{0}}">
+  视图
+</view>
+
+<!-- 控制传播-冒泡效应 -->
+<view class="father" hover-class="f_hv" hover-start-time="{{0}}">
+  <view class="vw1" 
+    hover-class="hv" 
+    hover-stay-time="{{500}}"
+    hover-start-time="{{0}}"
+    hover-stop-propagation
+  >
+
+  </view>
+</view>
