@@ -1,0 +1,27 @@
+<view>演示模板的定义</view>
+
+<!-- 定义模板-完成代码的复用 -->
+
+<!-- 1. import导入模板文件是不支持递归导入(嵌套导入的) -->
+<import src='/assets/template/tmp' />
+<template is="tp" data="{{bt1:'按键1',tt:'文本',bt2:'按键2'}}" />
+
+<template is="tp" data="{{bt1:'iwen',tt:'独孤九剑',bt2:'peter'}}"></template>
+
+<!-- <template is="title"></template> -->
+
+<!-- 2.include 是不能导入模板的,但是却能导入除了模板文件和wxs文件之外的wxml共性文件,相当于拷贝 -->
+<import src='/assets/template/title' />
+<template is="title"></template>
+
+<!-- 3.include文件是可以导入除了模板文件和wxs文件外的整个的文档的,相当于把共性的文档抽取出来,形成一个wxml文件--哪里需要就可以使用<include/>导入使用.
+  而且<include />是可以随处导入使用的,既可以单独的导入,也可以嵌套在其他的组件中导入使用。
+ -->
+
+<include src='/assets/common/common' />
+
+<view>
+  <button>检查是否</button>
+  <include src='/assets/common/common' />
+  <text>兹事体大</text>
+</view>

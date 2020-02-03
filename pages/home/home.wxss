@@ -1,4 +1,12 @@
-.title {
+/* @import "../style/vm.wxss" */
+@import "../style/nine-grid.wxss"
+
+.st1 {
   color: red;
   font-size: 30px;
- }
+}
+
+.st2{
+  color: blue;
+  font-size: 60rpx;
+}

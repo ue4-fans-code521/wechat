@@ -1,0 +1,9 @@
+<!-- import是不支持template模板的递归导入的 -->
+<import src='/assets/template/title' />
+
+<template name="tp">
+  <button>{{bt1}}</button>
+  <text>{{tt}}</text>
+  <button>{{bt2}}</button>
+</template>
+

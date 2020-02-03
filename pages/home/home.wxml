@@ -1,5 +1,20 @@
-<text class="title">傻逼青年欢乐多</text>
-<button size="mini">把我</button>
+<view class="st1">hello world!</view>
+<view class="st2">hello world!</view>
 
-<view>2.知识点</view>
-<view>hello world!</view>
+<!-- 仿照官方的weui-wxss样式库 -->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">Grid</view>
+    <view class="page__desc">九宫格</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-grids">
+      <block wx:for="{{grids}}" wx:key="*this">
+        <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+          <image class="weui-grid__icon" src="../images/icon_tabbar.png" />
+          <view class="weui-grid__label">Grid</view>
+        </navigator>
+      </block>
+    </view>
+  </view>
+</view>

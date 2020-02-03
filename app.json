@@ -1,5 +1,10 @@
 {
   "pages": [
+    "pages/template/template",
+    "pages/logic/logic",
+    "pages/vfor/vfor",
+    "pages/mustache/mustache",
     "pages/home/home"
-  ]
+  ],
+  "sitemapLocation": "sitemap.json"
 }

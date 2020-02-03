@@ -1,0 +1,26 @@
+<!-- wx:if  wx:elif  wx:else使用 -->
+<button bindtap="incstep">增长5</button>
+<view wx:if="{{score >= 90}}">优秀</view>
+<view wx:elif="{{score >= 80}}">良好</view>
+<view wx:elif="{{score >= 70}}">一般</view>
+<view wx:elif="{{score >= 60}}">及格</view>
+<view wx:else>不及格</view>
+
+<view>=============================</view>
+
+<!-- wx:if和hidden属性的区别 -->
+<view wx:if="{{isshow}}">逻辑判断</view>
+
+<view style="display:none">多难兴邦</view>
+
+<view hidden="{{false}}">登临</view>
+
+<view wx:if="{{true}}">hidden属性1</view>
+
+<view wx:if="{{false}}">hidden属性2</view>
+
+<import src='/assets/template/template' />
+<import src='/assets/template/title' />
+<template is="tp" data="{{bt1:'案件1',tt:'文本1',bt2:'案件2'}}"></template>
+
+<template is="title"></template>

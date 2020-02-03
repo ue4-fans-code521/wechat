@@ -1,0 +1,13 @@
+<!-- 1.mustache语法可以支持表达式(比如:三目运算符) -->
+<view>{{age
+  <10? '小子': '姑娘'}}</view>
+    <view>{{name +' ' +age}}</view>
+    <view>{{name}} {{age}}</view>
+    <view>{{nowtime}}</view>
+
+    <!-- 在属性中使用mustache语法-同样支持三目运算符 -->
+    <button bindtap="changeColor">改变颜色</button>
+    <view class="ft {{isactive?'active':''}}">七十二变</view>
+
+    <view style="color:{{vcolor}};font-size:{{vsize}}">飞龙在天</view>
+  
