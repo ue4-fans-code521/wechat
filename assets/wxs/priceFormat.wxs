@@ -1,0 +1,9 @@
+var priceFormat = function(price, d) {
+  var bit = d || 2
+  return price.toFixed(bit)
+
+}
+
+module.exports={
+  priceFormat:priceFormat
+}

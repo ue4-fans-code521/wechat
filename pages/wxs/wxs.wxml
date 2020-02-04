@@ -1,0 +1,43 @@
+<!-- 第一种定义wxs的方式-直接定义在wxml文件中 -->
+<!-- 中间就可以书写js代码了,不过现在仅仅支持es5,暂不支持es6语法,故不能使用像const,let这样定义变量的类型 -->
+<!-- <wxs module="info">
+  var name = 'iwen';
+  var age = 123
+  var fn = function(v1, v2) {
+    return v1 + v2;
+  }
+
+  module.exports = {
+    name: name,
+    age: age,
+    fn: fn
+  }
+</wxs> -->
+
+<!-- 2.方法2
+  把wxs代码单独的定义在.wxs文件中,需要时动态的引入
+ -->
+<!-- 注意:如果引入单独定义的wxs文件,src必须使用相路径 -->
+<!-- <wxs src='/assets/wxs/demo.wxs' module='info' /> -->
+
+<wxs src='../../assets/wxs/demo.wxs' module='info' />
+<view>
+  {{info.name}}
+</view>
+
+<view>
+  {{info.age}}
+</view>
+
+<view>
+  {{info.fn(99,2)}}
+</view>
+
+
+<!-- 为了对价格进行四色五入,我们需要调用priceFormat.wxs文件中的
+  方法priceFormat()
+ -->
+
+<view>====================================</view>
+<wxs src='../../assets/wxs/priceFormat.wxs' module='pf'/>
+<view>{{pf.priceFormat(price,1)}}</view>

@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/eventspread/eventspread",
+    "pages/event/event",
     "pages/home/home"
   ]
 }

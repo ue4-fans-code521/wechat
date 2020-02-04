@@ -1,0 +1,22 @@
+/* pages/eventspread/eventspread.wxss */
+
+.v-outer {
+  width: 600rpx;
+  height: 600rpx;
+  background: blue;
+  color: white;
+  font-size: 50rpx;
+}
+
+.v-middle {
+  width: 400rpx;
+  height: 400rpx;
+  background: green;
+
+}
+
+.v-inner {
+  width: 200rpx;
+  height: 200rpx;
+  background: red;
+}

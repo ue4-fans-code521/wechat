@@ -1,0 +1,14 @@
+<!-- 关于事件发生的两个阶段
+  1.捕获阶段(capture)
+  2.冒泡阶段(bind)
+ -->
+
+<view id='v_outer' class="v-outer" bindtap="outerTap" bindtouchstart="xxx_start" capture-bind:touchstart="xxx" capture-bind:tap="outerCaptureTap">
+  外view
+  <view id='v_middle' class="v-middle" bindtap="middleTap" capture-bind:tap="middleCaptureTap" capture-bind:touchstart="yyy" bindtouchstart="yyy_start">
+    中view
+    <view id='v_inner' class="v-inner" bindtap="innerTap" capture-bind:tap="innerCaptureTap" capture-bind:touchstart="zzz" bindtouchstart="zzz_start">
+      内view
+    </view>
+  </view>
+</view>

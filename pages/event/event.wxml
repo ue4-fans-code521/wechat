@@ -1,0 +1,25 @@
+<view class='cls' bind:tap='handleTap' bind:touchstart='handleTouchStart' bind:touchmove='handleTouchMove' bind:touchend='handleTouchEnd' bind:longpress='handleLongPress'>视图显示</view>
+
+<button bindtap="handleevent" bindtouchend="handleTouchEnd" bindtouchmove="handleTouchMove">
+  事件对象
+</button>
+
+
+<view>================================</view>
+
+<view id='outter' class="outter" bindtap="outerHandleTap">
+  外部view
+  <view id='inner' class="inner" bindtap="innerHandleTap">
+    内部view
+  </view>
+</view>
+
+<view>========事件中的参数的传递-使用data-xxx={{xxx}}==========</view>
+
+<view class="container">
+  <block>
+    <view wx:for='{{goods}}' wx:key='index' class="item" bindtap="passParams" data-index="{{index}}" data-item="{{item}}" data-iwen="iwen">
+      {{item}}
+    </view>
+  </block>
+</view>
