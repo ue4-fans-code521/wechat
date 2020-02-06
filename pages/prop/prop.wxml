@@ -1,0 +1,5 @@
+<!-- 验证自定义组件与引用页面之间的数据的传递机制 -->
+<!-- 1.首先验证的是引用页面向自定义组件传递数据 -->
+<cp-prop title='东方不败' />
+<cp-prop title='笑傲江湖' />
+<cp-prop title='独孤求败' extcontent='r_color'/>

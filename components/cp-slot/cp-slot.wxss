@@ -1,0 +1,15 @@
+/* components/cp-slot/cp-slot.wxss */
+.container{
+  display: flex;
+  text-align: center;
+  /* line-height: 2rpx */
+}
+
+.itm {
+  flex: 1;
+}
+
+image {
+  width: 100rpx;
+  height: 100rpx
+}

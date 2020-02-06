@@ -1,0 +1,8 @@
+<!--pages/demo/demo.wxml-->
+<!-- 
+  自定义组件在使用之间必须首先在 页面.json文件 中进行注册 
+  是 key:value键值对 的形式进行自定义组件的注册 
+-->
+<text class="content">使用组件</text>
+
+<my-comp />

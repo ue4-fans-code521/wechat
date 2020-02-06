@@ -1,0 +1,4 @@
+/* pages/prop/prop.wxss */
+.r_color{
+  background: purple!important
+}

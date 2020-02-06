@@ -1,0 +1,1 @@
+<view>自定义组件:{{counter}}</view>

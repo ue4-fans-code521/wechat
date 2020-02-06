@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "cp-slot": "/components/cp-slot/cp-slot",
+    "cp-sel": "/components/cp-sel/cp-sel",
+    "cp-nav": "/components/cp-nav/cp-nav",
+    "cp-lifetime": "/components/cp-lifetime/cp-lifetime"
+  }
+}

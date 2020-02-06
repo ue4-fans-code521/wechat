@@ -1,0 +1,16 @@
+/* components/my-comp/my-comp.wxss */
+.title{
+  color: red;
+  font-size: 40rpx;
+
+}
+
+.content{
+  color: green;
+  font-size: 60rpx;
+}
+
+
+/* #con{
+  background: yellow
+} */

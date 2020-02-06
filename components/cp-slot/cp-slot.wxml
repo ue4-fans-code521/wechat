@@ -1,0 +1,7 @@
+<view class="container">
+  <!-- <slot></slot> -->
+  <slot name="slot1" class="itm"></slot>
+  <slot name="slot2" class="itm"></slot>
+  <slot name="slot3" class="itm"></slot>
+  <slot name="slot4" class="itm"></slot>
+</view>

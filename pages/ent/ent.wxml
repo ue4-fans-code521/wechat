@@ -1,0 +1,3 @@
+<!-- 下面我们演示如何把自定义组件中的事件传递到引用页面 -->
+<view >{{counter}}</view>
+<cp-event bind:bubble="handlebubble" data-brand='iwen'/>

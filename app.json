@@ -1,5 +1,13 @@
 {
   "pages": [
+    "pages/navigator/navigator",
+    "pages/ent/ent",
+    "pages/prop/prop",
+    "pages/demo/demo",
     "pages/home/home"
-  ]
+  ],
+  "usingComponents": {
+    "my-comp": "/components/my-comp/my-comp"
+  },
+  "sitemapLocation": "sitemap30.json"
 }

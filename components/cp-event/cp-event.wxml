@@ -1,0 +1,1 @@
+<button bind:tap="handletap">---点击我,看效果---</button>

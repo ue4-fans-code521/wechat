@@ -1,0 +1,13 @@
+/* components/prop/prop.wxss */
+.title{
+  background: red;
+  color: yellow;
+  font-size: 50rpx;
+}
+
+
+.content{
+  background: green;
+  color: white;
+  font-size: 60rpx;
+}

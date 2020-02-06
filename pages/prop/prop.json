@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "cp-prop":"/components/cp-prop/cp-prop"
+  }
+}

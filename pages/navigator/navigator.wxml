@@ -1,0 +1,28 @@
+<cp-nav goods="{{['皮夹克', '连衣裙', '牛仔裤']}}" bind:cp_nav_event="accept_nav_event" />
+
+<!-- 2.如何通过外部引用页面的事件，来改变自定义组件的值 -->
+<button bind:tap="handleTapBtnClk">引用页面button</button>
+<cp-sel id="sel" />
+
+<!-- 3.如何使用自定义组件插槽slot -->
+<view>-----------------插槽的使用------------------</view>
+<cp-slot>
+  <!-- 单插槽的使用 -->
+  <!-- <button>飞腾2000</button>
+  <button>天河1000</button>
+  <button>飞腾2000</button>
+  <button>天河1000</button> -->
+
+  <image slot="slot1" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1580912931713&di=92639ebb3c571f66dc2894a8498483fe&imgtype=0&src=http%3A%2F%2Fdl.ppt123.net%2Fpptbj%2F201603%2F2016030410211241.jpg" />
+  <button slot="slot3" size="mini">飞腾2000</button>
+  <button slot="slot1" size="mini">天河1000</button>
+  <button slot="slot2" size="mini">神威之光</button>
+  <image slot="slot3" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1580912931713&di=92639ebb3c571f66dc2894a8498483fe&imgtype=0&src=http%3A%2F%2Fdl.ppt123.net%2Fpptbj%2F201603%2F2016030410211241.jpg" />
+
+</cp-slot>
+
+<slider value="50" slot="slot4"></slider>
+
+<!-- 4.下面我们来演示自定义组件中,对于引用页面和自身的声明周期的监测函数 -->
+<button type="primary" bind:tap="handleHiden">自定义组件生命周期</button>
+<cp-lifetime wx:if="{{isshow}}"/>

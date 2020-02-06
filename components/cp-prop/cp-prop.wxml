@@ -1,0 +1,2 @@
+<view class="title">{{title}}</view>
+<view class="content extcontent">prop自定义组件---content</view>

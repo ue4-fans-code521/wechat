@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "cp-event":"/components/cp-event/cp-event"
+  }
+}
