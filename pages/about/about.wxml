@@ -1,0 +1,3 @@
+<!--pages/about/about.wxml-->
+<button type="primary">这是测试按钮</button>
+<image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1580996494886&di=1699debe15dae1d84a512187aa3fb33a&imgtype=0&src=http%3A%2F%2Fwww.zhongguofeiyi.cn%2Fueditor%2Fphp%2Fupload%2Fimage%2F20161223%2F1482500899391244.jpg" mode="widthFix"></image>

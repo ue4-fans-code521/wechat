@@ -1,5 +1,19 @@
-<text class="title">傻逼青年欢乐多</text>
+<text class="title">欢乐多</text>
 <button size="mini">把我</button>
 
 <view>2.知识点</view>
 <view>hello world!</view>
+<!-- 1.showtoast弹窗 -->
+<button bind:tap="handlePopupToast" type="primary" class="btn">showtoast弹窗</button>
+
+<!-- 2.showmodal弹窗 -->
+<button bind:tap="handlePopupModal" type="primary" class="btn">showmodal弹窗</button>
+
+<!-- 3.showloading -->
+<button bind:tap="handlePopupLoading" type="primary" class="btn">showloading弹窗</button>
+
+<!-- 4.showactionsheet -->
+<button bind:tap="handlePopupActionSheet" type="primary" class="btn">showactionsheet弹窗</button>
+
+<!-- 还有一种分享的模式,就是直接的在button的属性type -->
+<button class="btn" open-type="share">分享模式</button>
