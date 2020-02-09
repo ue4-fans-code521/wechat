@@ -1,0 +1,16 @@
+<!--pages/detail/detail.wxml-->
+<view>
+  <text>pages/detail/detail.wxml\n</text>
+  <text>详情页</text>
+  <button type="primary">按键</button>
+</view>
+
+<!-- <navigator url="/pages/comment/comment" open-type="navigate">xxxxx</navigator> -->
+
+<navigator open-type="navigateBack">回退-onestep</navigator>
+<navigator open-type="navigateBack" delta="2">回退-twostep</navigator>
+<button type="primary">{{name}}--{{age}}--{{country}}</button>
+
+<button type="primary" bind:tap="handleBack">API回退至首页Navigate</button>
+
+<button type="primary" bind:tap="handleBackRedirect">API回退至首页redirect</button>

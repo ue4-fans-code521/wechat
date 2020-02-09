@@ -1,5 +1,37 @@
-<text class="title">傻逼青年欢乐多</text>
-<button size="mini">把我</button>
+<!-- 
+1.open-type="navigate"或者默认方式 
+特点: 1.不能跳转到tabBar所包含的页面
+      2.默认是含有回退按键的,可以返回到上一级跳转之前的页面
+      3.即便是跳转, 也并没有关闭跳转之前的页面
+-->
+<navigator url="/pages/detail/detail?name=iwen&age=123&country=UK" open-type="navigate">主页-->详情-navigate</navigator>
 
-<view>2.知识点</view>
-<view>hello world!</view>
+<!-- 
+2. open-type="redirect"
+  特点1.也是不能够跳转到含有tabBar的页面的地址的.
+  2.没有像navigate一样的默认的回退按键的.
+  3.一旦跳转,它会把跳转之前的页面一并关闭掉.
+
+-->
+<navigator url="/pages/detail/detail" open-type="redirect">
+  跳转-redirect
+</navigator>
+
+<!-- 
+3.open-type="switchTab"
+  特点:1.仅仅能够跳转到包含在tabBar中的页面,其他的页面是无法跳转的
+  2.默认跳转之后也是没有回退按键的.
+  3.跳转之后也是关闭其他的非tabBar页面的.
+ -->
+
+<navigator url="/pages/comment/comment" open-type="switchTab">
+  主页-->评论-switchTab
+</navigator>
+
+<navigator url="/pages/about/about">
+  主页-->关于-navigate
+</navigator>
+
+<button type="primary">{{info}}</button>
+
+<button type="primary" bind:tap="handleJump">API跳转到详情页</button>
